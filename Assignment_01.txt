@@ -1,0 +1,70 @@
+Assignment
+
+1. Identify the primary keys and foreign keys in maven movies db. Discuss the differences.
+
+describe actor; 
+describe actor_award; 
+describe address;
+describe advisor;
+describe category;
+describe customer;
+describe film
+describe film_actor
+describe film_category
+describe film_text
+describe inventory
+describe investor
+describe language
+describe payment
+describe rental
+describe staff
+describe store
+
+From the above queries, we will get primary keys and foreign keys. The difference between these two keys is that a primary key is unique within the table and the same key used for reference in another table acts like a foreign key.
+eg. actor_id is primary key in 'actor' table whereas acts as a foreign key in 'actor_award' table
+
+
+2. select * from actor;
+
+
+3. Select * from customer;
+
+4. select country from country;
+
+5. select first_name, last_name from customer where active = 1;
+
+6. select rental_id from customer where customer_id = 1;
+
+7. select title from film where rental_duration > 5
+
+8. select replacement_cost from film where replacement_cost > 15 and replacement_cost < 20;
+
+9. select count(distinct first_name) as Unique_Name from actor;
+
+10. select * from customer limit 10;
+
+11. select * from customer where first_name like "b%" limit 3;
+
+12. select title from film where rating = "g";
+
+13. select first_name, last_name from customer where first_name like "a%";
+
+14. select first_name, last_name from customer where first_name like "%a";
+
+15. select city from city where city like "a%a";
+
+16. select first_name, last_name from customer where first_name like "%ni" or "ni%" or "%ni%";
+
+17. select first_name, last_name from customer where first_name like "_r%";
+
+18. select first_name, last_name from customer where first_name like "r____%";
+
+19. select first_name, last_name from customer where first_name like "a%o";
+
+20. select title from film where rating in ("pg", "pg-13");
+
+21. Select title from film where length between (50 and 100);
+
+22. select * from actor limit 50;
+
+23. select distinct film_id from inventory;
